@@ -1,0 +1,133 @@
+from configs.settings_typo import FONT_SIZE
+# -- Overlay Region Names --
+# -- Common Overlay Margin --
+OVERLAY_MARGIN: int     = 8
+# -- Overlay Text Size (pt) --
+OVERLAY_TEXT_SIZE: int        = FONT_SIZE
+OVERLAY_TEXT_BOLD: bool        = False
+OVERLAY_TEXT_ITALIC: bool      = False
+OVERLAY_TEXT_LINEHEIGHT: float  = 1.0
+OVERLAY_LINE_PAD: int          = 2
+OVERLAY_LINEBREAK: float         = 0.0
+# -- Per-overlay Line Height --
+STATUS_OVERLAY_LINEHEIGHT: int  = 0
+MESSAGE_OVERLAY_LINEHEIGHT: int = 0
+LOG_OVERLAY_LINEHEIGHT: int     = 0
+COMMENT_OVERLAY_LINEHEIGHT: int = 0
+ATTR_OVERLAY_LINEHEIGHT: float    = 1.25
+# -- Recording Indicator --
+REC_DOT_BASELINE_LIFT_RATIO: float = 0.1
+REC_INDICATOR_TEXT: str = 'RECORDING... '
+# -- Overlay Text Case --
+TEXT_OVERLAY_CASE: str = 'UPPER'
+# -- Accordion Separator --
+OVERLAY_SEPARATOR_CHAR: str = '-'
+OVERLAY_SEPARATOR_PADDING: int = 0
+# -- Info Overlay --
+INPUT_PATH_MAX_CHARS: int = 40
+OVERLAY_TOP_LEFT_ORDER: tuple[str, ...] = ('info', 'cam', 'stat', 'objinfo')
+# -- Audio Overlay --
+AUDIO_LIST_TITLE: str = 'AUDIO'
+# -- Region Overlay Text --
+REGION_LIST_TITLE: str = 'PLUGIN REGION'
+REGION_LIST_ITEM_PREFIX: str = '+ '
+REGION_LIST_ITEM_PREFIX_SELECTED: str = '- '
+REGION_LIST_SELECTED_UNDERLINE: bool = True
+REGION_LIST_SELECTED_BOLD: bool = True
+REGION_LIST_SELECTED_ITALIC: bool = True
+# -- Status Overlay --
+OVERLAY_STATUS_KEY: str = 'status'
+STATUS_OVERLAY_TEXTSIZE: int = OVERLAY_TEXT_SIZE - 0
+# -- Comment Overlay --
+COMMENT_OVERLAY_TEXT: str = ''
+COMMENT_OVERLAY_TEXT_SIZE: int   = OVERLAY_TEXT_SIZE
+COMMENT_OVERLAY_TEXT_BOLD: bool   = True
+COMMENT_OVERLAY_TEXT_ITALIC: bool = OVERLAY_TEXT_ITALIC
+# -- Log Overlay Text --
+OVERLAY_LOG_SIZE: int         = OVERLAY_TEXT_SIZE
+OVERLAY_LOG_BOLD: bool         = OVERLAY_TEXT_BOLD
+OVERLAY_LOG_ITALIC: bool       = True
+LOG_OVERLAY_MAX_CHARS: int = 117
+LOG_OVERLAY_MAX_LINES: int = 1
+# -- Attribute Overlay --
+ATTR_PANEL_KEYFRAME_DURATION: bool = False
+ATTRIBUTE_OVERLAY_WIDTH: int = 300
+# -- Panel Title --
+PANEL_TITLE_SIZE: int = FONT_SIZE
+PANEL_TITLE_GAP_RATIO: float = 0.15
+# -- Message Overlay --
+MESSAGE_OVERLAY_VISIBILITY: bool = True
+MESSAGE_OVERLAY_TEXT_SIZE: int = OVERLAY_TEXT_SIZE
+MESSAGE_OVERLAY_BG_ENABLE: bool = False
+MESSAGE_OVERLAY_BOLD: bool      = True
+MESSAGE_OVERLAY_ITALIC: bool    = OVERLAY_TEXT_ITALIC
+MESSAGE_OVERLAY_DURATION: int  = 5
+MESSAGE_OVERLAY_MAX_CHARS: int = 140
+MESSAGE_OVERLAY_POSITION: str = 'bottom'
+MESSAGE_OVERLAY_BUF_CHAR: str = ' . '
+LIVE_REC_BLINK_MS: int = 1000
+# -- Loading Overlay --
+BUFFER_MESSAGE: str = 'PRE-BUFFERING... PLEASE WAIT...'
+SAVE_FINALIZE_MESSAGE: str = 'FINALIZING OUTPUT... PLEASE WAIT...'
+BUFFER_STAGES: tuple[str, ...] = (
+    'INITIALIZING RENDERER',
+    'WARMING GPU CLOCK',
+    'COMPILING SHADERS',
+    'BUFFERING FRAMES',
+    'PRIMING OVERLAYS',
+    'SYNCING CLOCK',
+)
+LOADING_OVERLAY_TEXT_SIZE: int = FONT_SIZE * 1.125
+LOADING_OVERLAY_BOLD: bool      = False
+LOADING_OVERLAY_ITALIC: bool    = False
+LOADING_OVERLAY_BLINK_PERIOD: int = 0
+# -- Axis Indicator --
+AXIS_INDICATOR_SCALE: int    = 40
+AXIS_INDICATOR_X: int        = 55
+AXIS_INDICATOR_Y_OFFSET: int = 55
+AXIS_INDICATOR_ARROW_WIDTH: int = 3
+AXIS_INDICATOR_CONE_SIZE: int   = 10
+AXIS_INDICATOR_LABEL_RATIO: float = 0.98
+AXIS_INDICATOR_LABEL_GAP: int = 9
+# -- Sequence Overlay Inset --
+SEQ_OVERLAY_W: int      = 250
+SEQ_OVERLAY_MARGIN: int = OVERLAY_MARGIN
+# -- Sequence Overlay Duration --
+PRESERVE_SEQUENCE_OVERLAY_DURATION: bool = True
+# -- Sequence Overlay Corner Rounding --
+SEQ_OVERLAY_CORNER_RADIUS: int = 8
+# -- Waveform Overlay Inset --
+DISPLAY_WAVEFORM_OVERLAY: bool = True
+STARTUP_WAVEFORM_OVERLAY: bool = False
+WAVEFORM_OVERLAY_W: int        = SEQ_OVERLAY_W
+WAVEFORM_OVERLAY_MARGIN: int   = SEQ_OVERLAY_MARGIN
+WAVEFORM_STACK_GAP: int        = OVERLAY_MARGIN
+WAVEFORM_OVERLAY_ALPHA: float  = 1.0
+WAVEFORM_OVERLAY_LINE_W: float = 1.0
+WAVEFORM_OVERLAY_GAIN: float   = 1.0
+WAVEFORM_OVERLAY_COLOR: str    = '#FFFFFF'
+# -- Overlay Hard Display Gate --
+DISPLAY_INFO_OVERLAY: bool     = True
+DISPLAY_STAT_OVERLAY: bool     = True
+DISPLAY_CAM_OVERLAY: bool      = True
+DISPLAY_OBJINFO_OVERLAY: bool  = True
+DISPLAY_STATUS_OVERLAY: bool   = True
+DISPLAY_GIZMO_OVERLAY: bool    = True
+DISPLAY_MESSAGE_OVERLAY: bool  = True
+DISPLAY_LOG_OVERLAY: bool      = True
+DISPLAY_COMMENT_OVERLAY: bool  = True
+DISPLAY_SEQUENCE_OVERLAY: bool = True
+DISPLAY_COMPACT_OVERLAY: bool = False
+HIDE_ALL_OVERLAY: bool = False
+DISPLAY_INFO_INPUT_PATH: bool = False
+DISPLAY_STATUS_LOCK: bool     = False
+DISPLAY_STATUS_SOLO: bool     = False
+# -- Startup Display State --
+STARTUP_COLORMAP: bool = True
+STARTUP_LOGS: bool     = True
+STARTUP_ATTR_OVERLAY: bool = True
+STARTUP_AUDIO_ATTRIBUTE_OVERLAY: bool = False
+# -- Startup Overlay Groups --
+STARTUP_TEXT_OVERLAY: bool     = True
+STARTUP_GIZMO_OVERLAY: bool    = True
+STARTUP_SEQUENCE_OVERLAY: bool = True
